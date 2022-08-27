@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Facebook</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    #header {
+        height: 50px;
+        background-color: rgb(55, 55, 133);
+        color: white;
+        padding: 10px;
+    }
+    #header input {
+        width: 300px;
+        border-radius: 3%;
+    }
+    #left_sidebar {
+        float: left;
+        width: 20%;
+        height: 900px;
+        background-color: lightgray;
+        padding: 20px;
+    }
+    #main_content {
+        float: left;
+        width: 50%;
+        height: 900px;
+        background-color: lightgray;
+        padding: 10px;
+    }
+    .cont1 {
+        height: 200px;
+        background-color: white;
+        border: 1 solid lightgray;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+    .cont2 {
+        height: 600px;
+        background-color: white;
+        border: 1 solid lightgray;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    #right_sidebar {
+        float: left;
+        width: 30%;
+        height: 900px;
+        background-color: lightgrey;
+        padding: 10px;
+    }
+    .right1 {
+        height: 300px;
+        background-color: white;
+        border: 1 solid lightgray;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+    .right2 {
+        height: 500px;
+        background-color: white;
+        border: 1 solid lightgray;
+        border-radius: 10px;
+        padding: 10px;
+    }
+</style>
+<body>
+    <div id="header">
+        <span>logo</span>
+        <input type="text">
+    </div>
+    <div id="left_sidebar">Left side bar</div>
+    <div id="main_content">
+        <div class="cont1">Content1</div>
+        <div class="cont2">Content2</div>
+    </div>
+    <div id="right_sidebar">
+        <div class="right1">Story</div>
+        <div class="right2">Your Page</div>
+    </div>
+</body>
+</html>
