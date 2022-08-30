@@ -4,87 +4,164 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layout Facebook</title>
+    <title>Facebook</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="facebook.css">
 </head>
-<style>
-    * {
-        box-sizing: border-box;
-    }
-    #header {
-        height: 50px;
-        background-color: rgb(55, 55, 133);
-        color: white;
-        padding: 10px;
-    }
-    #header input {
-        width: 300px;
-        border-radius: 3%;
-    }
-    #left_sidebar {
-        float: left;
-        width: 20%;
-        height: 900px;
-        background-color: lightgray;
-        padding: 20px;
-    }
-    #main_content {
-        float: left;
-        width: 50%;
-        height: 900px;
-        background-color: lightgray;
-        padding: 10px;
-    }
-    .cont1 {
-        height: 200px;
-        background-color: white;
-        border: 1 solid lightgray;
-        border-radius: 10px;
-        margin-bottom: 10px;
-        padding: 10px;
-    }
-    .cont2 {
-        height: 600px;
-        background-color: white;
-        border: 1 solid lightgray;
-        border-radius: 10px;
-        padding: 10px;
-    }
-    #right_sidebar {
-        float: left;
-        width: 30%;
-        height: 900px;
-        background-color: lightgrey;
-        padding: 10px;
-    }
-    .right1 {
-        height: 300px;
-        background-color: white;
-        border: 1 solid lightgray;
-        border-radius: 10px;
-        margin-bottom: 10px;
-        padding: 10px;
-    }
-    .right2 {
-        height: 500px;
-        background-color: white;
-        border: 1 solid lightgray;
-        border-radius: 10px;
-        padding: 10px;
-    }
-</style>
 <body>
     <div id="header">
-        <span>logo</span>
-        <input type="text">
+        <img src="images/logofacebook.png" alt="logo" style="width:30px; margin: 0 20px; border-radius: 5px">
+        <div id="search">
+            <input type="text" placeholder="Search"/>
+        </div>
+        <div id="head-link">
+            <div id="menu">
+                <ul>
+                    <li><a href="#" target="_blank">Name</a></li>
+                    <li><a href="#" target="_blank">Home</a></li>
+                    <li><a href="#" target="_blank" style="border-right: 0px">Find Friends</a></li>
+                </ul>
+            </div>
+            <div id="other-link">
+                <a href="#"><i class="fa-solid fa-user-group" style="color: black; margin-right: 10px; font-size: 20px;"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-messenger" style="color: black; margin-right: 10px; font-size: 20px;"></i></a>
+                <a href="#" style="border-right: 1px solid black; margin-right: 10px;"><i class="fa-solid fa-globe" style="color: black; margin-right: 10px; font-size: 20px;"></i></a>
+                <a href="#"><i class="fa-solid fa-circle-question" style="color: black; margin-right: 10px; font-size: 20px;"></i></a>
+                <a href="#"><i class="fa-solid fa-caret-down" style="color: black; margin-right: 10px; font-size: 20px;"></i></a>
+            </div>
+        </div>
+        
     </div>
-    <div id="left_sidebar">Left side bar</div>
+    <div id="left_sidebar">
+        <div>
+            <img src="images/icon-circle.png" alt="avatar"><p>Name Surname</p>
+        </div>
+        <div id="menu-left">
+            <ul>
+                <li><a href="#"><span><i class="fa-solid fa-square-rss" style="color: rgb(84, 127, 245); margin-right: 5px; font-size: 25px; margin-left: 5px;"></i></span>News Feed</a></li>
+                <li><a href="#"><span><i class="fa-brands fa-facebook-messenger" style="color: rgb(84, 127, 245); margin-right: 5px; font-size: 25px; margin-left: 5px;"></i></span>Messenger</a></li>
+                <li><a href="#"><span><i class="fa-solid fa-store" style="color: rgb(241, 140, 8); margin-right: 5px; font-size: 25px; margin-left: 5px;"></i></span>Marketplace</a></li>
+            </ul>
+        </div>
+        <div id="menu-left">
+            <ul>
+                <li><a href="#"><span><i class="fa-solid fa-universal-access" style="color: rgb(84, 127, 245); margin-right: 5px; font-size: 25px; margin-left: 5px;"></i></span>Lorem Ipsum</a></li>
+                <li><a href="#"><span><i class="fa-solid fa-universal-access" style="color: rgb(84, 127, 245); margin-right: 5px; font-size: 25px; margin-left: 5px;"></i></span>Lorem Ipsum</a></li>
+                <li><a href="#"><span><i class="fa-solid fa-universal-access" style="color: rgb(84, 127, 245); margin-right: 5px; font-size: 25px; margin-left: 5px;"></i></span>Lorem Ipsum</a></li>
+                <li><a href="#"><span><i class="fa-solid fa-universal-access" style="color: rgb(84, 127, 245); margin-right: 5px; font-size: 25px; margin-left: 5px;"></i></span>Lorem Ipsum</a></li>
+                <li><a href="#"><span><i class="fa-solid fa-universal-access" style="color: rgb(84, 127, 245); margin-right: 5px; font-size: 25px; margin-left: 5px;"></i></span>Lorem Ipsum</a></li>
+                <li><a href="#"><span><i class="fa-solid fa-universal-access" style="color: rgb(84, 127, 245); margin-right: 5px; font-size: 25px; margin-left: 5px;"></i></span>Lorem Ipsum</a></li>
+            </ul>
+        </div>
+        <div id="menu-left">
+            <ul>
+                <li><a href="#"><span><i class="fa-solid fa-calendar-check" style="color: rgb(238, 115, 66); margin-right: 5px; font-size: 20px; margin-left: 5px;"></i></span>Events</a></li>
+                <li><a href="#"><i class="fa-solid fa-flag" style="color: rgb(238, 185, 10); margin-right: 5px; font-size: 20px; margin-left: 5px;"></i>Pages</a></li>
+                <li><a href="#"><span><i class="fa-solid fa-universal-access" style="color: rgb(84, 127, 245); margin-right: 5px; font-size: 20px; margin-left: 5px;"></i></span>Group</a></li>
+                <li><a href="#"><i class="fa-solid fa-universal-access" style="color: rgb(84, 127, 245); margin-right: 5px; font-size: 20px; margin-left: 5px;"></i>Friend Lists</a></li>
+                <li><a href="#"><i class="fa-solid fa-universal-access" style="color: rgb(84, 127, 245); margin-right: 5px; font-size: 20px; margin-left: 5px;"></i>On This Day</a></li>
+                <li><a href="#"><i class="fa-solid fa-universal-access" style="color: rgb(84, 127, 245); margin-right: 5px; font-size: 20px; margin-left: 5px;"></i>Page Feed</a></li>
+                <li><a href="#"><i class="fa-solid fa-universal-access" style="color: rgb(84, 127, 245); margin-right: 5px; font-size: 20px; margin-left: 5px;"></i>Find Friends</a></li>
+                <li><a href="#"><i class="fa-solid fa-universal-access" style="color: rgb(84, 127, 245); margin-right: 5px; font-size: 20px; margin-left: 5px;"></i>Photos</a></li>
+                <li><a href="#"><i class="fa-solid fa-universal-access" style="color: rgb(84, 127, 245); margin-right: 5px; font-size: 20px; margin-left: 5px;"></i>Games</a></li>
+            </ul>
+            <a class="see-more" href="#"> <i class="fa-solid fa-caret-down"></i> See more...</a>
+        </div>
+        <p id="link-page"><span>Create</span><br>
+            <a href="#">Ad</a>
+            <a href="#">Page</a>
+            <a href="#">Group</a>
+            <a href="#">Event</a>
+        </p>
+    </div>
     <div id="main_content">
-        <div class="cont1">Content1</div>
-        <div class="cont2">Content2</div>
+        <div class="cont1">
+            <div class="function_content1">
+                <a href="#" style="color: black; font-weight: bold;"><i class="fa-solid fa-pencil"></i> Make Post</a><span> | </span>
+                <a href="#"><i class="fa-solid fa-photo-film" style="color: black;"></i> Photo/Video Album</a><span> | </span>
+                <a href="#"><i class="fa-solid fa-video" style="color: black;"></i> Live Video</a>
+            </div>
+            <div class="your-mind">
+                <img src="images/icon-circle.png" alt="avatar"><p> What's on your mind, Name Surname?</p>
+            </div>
+            <div class="button-content1">
+                <input type="button" value="Photos/Videos" style="padding-left: 10px; width: 150px; height: 30px; border-radius: 20px; border: 1px solid lightgray"><i class="fa-solid fa-photo-film" style="color: green; margin-left: -140px;"></i>
+                <input type="button" value="Felling/Activity" style="padding-left: 10px; width: 150px; height: 30px; border-radius: 20px; border: 1px solid lightgray; margin-left: 130px;"><i class="fa-solid fa-face-laugh" style="color: goldenrod; margin-left: -140px; font-size: 16px;"></i>
+                <input type="button" value="..." style="padding-left: 0px; width: 40px; height: 30px; border-radius: 20px; border: 1px solid lightgray; margin-left: 130px;">
+            </div>
+        </div>
+        <div class="cont2">
+            <div class="lorem">
+                <img src="images/icon-circle.png" alt="avatar"><p>Name Surname<span> lorem ipsum</span><br><span>Yesterday at 12:12 pm</span></p>
+            </div>
+            <p style="color: gray;">Lorem ipsum</p>
+            <div class="main-content"></div>
+            <div id="like"><i class="fa-solid fa-thumbs-up" style="color: rgb(82, 107, 185); font-size: 20px;"></i> Like</div>
+            <div id="message"><i class="fa-solid fa-comment" style="color: rgb(82, 107, 185); font-size: 20px;"></i></div>
+        </div>
+        <div class="cont3">
+
+        </div>
     </div>
     <div id="right_sidebar">
-        <div class="right1">Story</div>
-        <div class="right2">Your Page</div>
+        <div class="right1">
+            <h4>Stories</h4>
+            <p class="more">...</p>
+            <div class="surname">
+                <img src="images/icon-circle.png" alt="avatar"><p>Name Surname<br><span>13 hours ago</span></p>
+            </div>
+            <div class="surname">
+                <img src="images/icon-circle.png" alt="avatar"><p>Name Surname<br><span>2 hours ago</span></p>
+            </div>
+            <div class="surname">
+                <img src="images/icon-circle.png" alt="avatar"><p>Name Surname<br><span>12 minutes ago</span></p>
+            </div>
+            <a href="#"> <i class="fa-solid fa-caret-down"></i> See more</a>
+        </div>
+        <div class="right2">
+            <h4>Your page</h4>
+            <p class="more">...</p>
+            <div id="your-page">
+                <div class="avatar"></div>
+                <div class="list-your-page">
+                    <a href="#">Site name</a>
+                    <a href="#"><i class="fa-solid fa-comment-dots"></i> Messages</a>
+                    <a href="#"><i class="fa-solid fa-earth-americas"></i> Notifications</a>
+                </div>
+                <div id="button-your-page">
+                    <button><i class="fa-solid fa-square-pen" style="font-size: 20px; margin-bottom: 5px; color: gray;"></i><br>Publish</button>
+                    <button><i class="fa-solid fa-camera" style="font-size: 20px; margin-bottom: 5px; color: gray;"></i><br>Photo</button>
+                    <button><i class="fa-solid fa-video" style="font-size: 20px; margin-bottom: 5px; color: gray;"></i><br>Live</button>
+                    <button><i class="fa-solid fa-user-plus"  style="font-size: 20px; margin-bottom: 5px; color: gray;"></i><br>Invite</button>
+                </div>
+                <div id="like-view">
+                    <ul>
+                        <li style="border-top-left-radius: 7px; border-bottom-left-radius: 7px; background-color: lightgray">Likes</li>
+                        <li>Views</li>
+                        <li style="border-top-right-radius: 7px; border-bottom-right-radius: 7px;">Post</li>
+                    </ul>
+                    <div id="total-like">
+                        <p><span>13,508</span><br>160 likes this week</p>
+                    </div>
+                </div>
+                <div id="recent-post">
+                    <h4>Recent Posts</h4>
+                    <div id="work">
+                        <div class="avatar"></div>
+                        <div class="list-your-page" style="padding-top: 20px; margin-left: -10px">
+                            <a href="#">Work</a>
+                            <a href="#">Lorem Ipsum</a>
+                        </div>
+                        <div id="boost">
+                            <a href="#"><i class="fa-solid fa-thumbs-up" style="font-size: 20px; color:rgb(32, 90, 197);"></i></a>
+                            <a href="#"><i class="fa-brands fa-gratipay" style="font-size: 20px; color:rgb(226, 36, 61);"></i><sup>1,368</sup></a>
+                            <button>Boost Post</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
 </body>
 </html>
